@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["es2015", "webworker", "dom"],
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"module": "esnext",
+		"jsx": "react",
+		"jsxFactory": "h",
+		"resolveJsonModule": true,
+		"noImplicitAny": true,
+		"suppressImplicitAnyIndexErrors": false,
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+		"removeComments": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"allowUnreachableCode": false,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"paths": {
+			"app/*": ["src/app/*"],
+			"assets/*": ["src/statics/assets/*"]
+		}
+	}
+}

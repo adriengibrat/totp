@@ -1,0 +1,81 @@
+{
+  "name": "totp",
+  "version": "0.0.1",
+  "description": "Time based One Time Password Generation",
+  "license": "MIT",
+  "author": "Adrien Gibrat <adrien.gibrat@gmail.com>",
+  "keywords": [
+    "authentication",
+    "security",
+    "two-factor-authentication",
+    "two-factor",
+    "2fa",
+    "one time password",
+    "otp",
+    "totp",
+    "rfc-6238",
+    "hotp",
+    "rfc-4226"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriengibrat/totp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adriengibrat/totp/issues"
+  },
+  "scripts": {
+    "start": "parcel serve src/index.html",
+    "prebuild": "rm -rf ./dist",
+    "build": "parcel build src/index.html",
+    "deploy": "now deploy ./dist"
+  },
+  "prettier": {
+    "useTabs": true,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint"
+    ],
+    "*.{ts,tsx,css,scss}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "cssnano": "4.1.4",
+    "husky": "1.1.1",
+    "lint-staged": "7.3.0",
+    "node-sass": "4.9.3",
+    "now": "11.4.6",
+    "parcel-bundler": "1.10.2",
+    "parcel-plugin-sw-precache": "1.0.1",
+    "postcss-modules": "1.4.1",
+    "prettier": "1.14.3",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.15.0",
+    "tslint-config-standard": "8.0.1",
+    "typescript": "3.1.2",
+    "uglify-js": "3.4.9"
+  },
+  "dependencies": {
+    "base32-decode": "1.0.0",
+    "base32-encode": "1.1.0",
+    "classcat": "3.2.3",
+    "hyperapp": "1.2.9",
+    "idb-keyval": "3.1.0",
+    "jsqr": "1.1.1",
+    "tocca": "2.0.3"
+  }
+}

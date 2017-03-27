@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'Calibri';
+	src: local('Calibri'), url('./fonts/Calibri.woff2') format('woff2'),
+		url('./fonts/Calibri.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Light'), local('Poppins-Light'),
+		url('./fonts/Poppins-Light.woff2') format('woff2'),
+		url('./fonts/Poppins-Light.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+html {
+	/* fallback IE8+ */
+	font-size: 0.625em;
+	/* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+	font-size: calc(1em * 0.625);
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+body.loading h1 {
+	font-family: Poppins; /* force font loading */
+}
+
+body.loading p {
+	font-family: Calibri; /* force font loading */
+}
+
+body::-webkit-scrollbar {
+	width: 0.25rem;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 0.125rem;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+body.loading {
+	overflow: hidden;
+}
+
+body.loading:before {
+	display: block;
+	content: '';
+	margin: calc(50vh - 5rem) auto;
+	border-radius: 50%;
+	width: 9.5rem;
+	height: 9.5rem;
+	border: 0.25rem solid rgba(255, 255, 255, 0.2);
+	border-top-color: #6cbe9b;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

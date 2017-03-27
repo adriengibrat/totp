@@ -1,0 +1,12 @@
+{
+	"appTitle": "Secure authentication",
+	"appBaseline": "One Time Password generator",
+	"appLogoAlt": "Oodrive - Leading by trust",
+	"appWelcome": "To scan your first QR code, use the + button",
+	"scanButton": "Scan QR code",
+	"stopScanButton": "Stop QR code scan",
+	"delWarn": "Danger",
+	"delMessage": "Deleting may prevent any further sign-in",
+	"delCancel": "cancel",
+	"delTitle": "Delete permanently"
+}

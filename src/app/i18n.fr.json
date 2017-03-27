@@ -1,0 +1,12 @@
+{
+	"appTitle": "Authentification sécurisée",
+	"appBaseline": "Génerateur de mot de passe unique",
+	"appLogoAlt": "Oodrive - Leading by trust",
+	"appWelcome": "Pour scanner votre premier QR code, utilisez le bouton +",
+	"scanButton": "Scanner un QR code",
+	"stopScanButton": "Arrêter de scanner le QR code",
+	"delWarn": "Danger",
+	"delMessage": "La suppression peut empêcher toute connection",
+	"delCancel": "annuler",
+	"delTitle": "Suppression permanente"
+}

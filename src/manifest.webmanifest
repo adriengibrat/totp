@@ -1,0 +1,34 @@
+{
+	"short_name": "totp",
+	"name": "One Time Password",
+	"icons": [
+		{
+			"src": "assets/logo/small.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "assets/logo/medium.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "assets/logo/large.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "assets/logo/vector.svg",
+			"type": "image/svg"
+		}
+	],
+	"start_url": "index.html",
+	"background_color": "#fff",
+	"theme_color": "#266db0",
+	"display": "standalone",
+	"permissions": {
+		"video-capture": {
+			"description": "Scan QR codes"
+		}
+	}
+}

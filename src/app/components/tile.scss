@@ -1,0 +1,103 @@
+.tile {
+	display: flex;
+	font-family: 'Calibri';
+	font-size: 1.5rem;
+	color: #1f1f1f;
+
+	> * {
+		position: relative;
+		min-width: 100%;
+		padding: 1rem;
+		transition: transform 300ms;
+	}
+
+	.view {
+		background: white;
+		transform: translate(-100%);
+
+		h2 {
+			font-family: Poppins;
+			text-align: center;
+			margin: 0;
+		}
+
+		strong {
+			font-size: 5rem;
+			vertical-align: middle;
+		}
+	}
+
+	.timer {
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		background: #5bd1a0;
+		background-image: linear-gradient(to right, transparent 50%, #266db0 0);
+		display: inline-block;
+		margin: 2.5rem;
+		vertical-align: middle;
+
+		&:before {
+			content: '';
+			display: block;
+			margin-left: 50%;
+			height: 100%;
+			border-radius: 0 100% 100% 0 / 50%;
+			background-color: inherit;
+			transform-origin: left;
+			transition: transform 1s linear;
+		}
+
+		&[data-value='1']:before,
+		&[data-value='51']:before {
+			transition: none;
+		}
+
+		@for $i from 0 through 50 {
+			&[data-value='#{$i}']:before {
+				transform: rotate(#{$i/100}turn);
+			}
+		}
+
+		@for $i from 51 through 100 {
+			&[data-value='#{$i}']:before {
+				background-color: #266db0;
+				transform: rotate(#{$i/100 - 0.5}turn);
+			}
+		}
+	}
+
+	.confirm {
+		background: red;
+		font-size: 2.5rem;
+		color: white;
+		padding-right: 3rem; // confirm
+		padding-bottom: 2rem; // cancel
+	}
+
+	.message {
+		display: block;
+		margin: 0 4rem 0 1rem;
+	}
+
+	.cancel {
+		position: absolute;
+		font-size: 2rem;
+		bottom: 1.5rem;
+		left: 1rem;
+		cursor: pointer;
+	}
+
+	.remove {
+		position: absolute;
+		font-size: 5rem;
+		line-height: 1;
+		top: calc(50% - 2.5rem);
+		right: 2.5rem;
+		cursor: pointer;
+	}
+}
+
+.removing .view {
+	transform: translate(-200%);
+}

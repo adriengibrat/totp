@@ -1,0 +1,78 @@
+.app {
+	height: 100vh;
+	user-select: none;
+	cursor: default;
+}
+
+canvas:not(.scanning) {
+	display: none;
+}
+
+.header {
+	width: 100vw;
+	display: flex;
+	padding: 2rem;
+	padding-right: 1rem;
+
+	.logo {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.title {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		font-family: Poppins;
+		margin-bottom: -0.4em;
+		padding-left: 2rem;
+
+		h1 {
+			font-size: 2.3rem;
+			margin: 0;
+			color: #266db0;
+		}
+
+		small {
+			font-size: 1.3rem;
+			align-self: flex-end;
+		}
+	}
+}
+
+.welcome {
+	font-family: Calibri;
+	font-size: xx-large;
+	font-weight: lighter;
+	text-align: center;
+	color: grey;
+	padding: 5rem;
+}
+
+.add {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	font-size: 3rem;
+	background: #266db0;
+	color: white;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	border: none;
+	display: block;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	outline: 0;
+	z-index: 3;
+}
+
+.scan {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
