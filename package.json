@@ -72,7 +72,7 @@
   "dependencies": {
     "base32-decode": "1.0.0",
     "base32-encode": "1.2.0",
-    "classcat": "3.2.5",
+    "classcat": "5.0.4",
     "hyperapp": "1.2.10",
     "idb-keyval": "3.2.0",
     "jsqr": "1.4.0",
