@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "husky": "^2.4.1",
+    "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "node-sass": "^8.0.0",
     "now": "^21.0.1",
