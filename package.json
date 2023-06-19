@@ -59,7 +59,7 @@
     "lint-staged": "^13.2.2",
     "node-sass": "^8.0.0",
     "now": "^21.0.1",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.5",
     "parcel-plugin-sw-precache": "^1.1.2",
     "postcss-modules": "^1.5.0",
     "prettier": "^1.18.0",
