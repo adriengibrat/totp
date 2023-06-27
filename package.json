@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "base32-decode": "1.0.0",
-    "base32-encode": "1.2.0",
+    "base32-encode": "2.0.0",
     "classcat": "5.0.4",
     "hyperapp": "2.0.22",
     "idb-keyval": "6.2.1",
