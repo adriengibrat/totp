@@ -62,7 +62,7 @@
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-sw-precache": "^1.1.2",
     "postcss-modules": "^3.2.2",
-    "prettier": "^3.3.3",
+    "prettier": "^3.6.2",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",
